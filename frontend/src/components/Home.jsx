@@ -28,7 +28,7 @@ const Home = () => {
       <div className="sticky top-0 z-20">
         <Navbar />
       </div>
-      <div className="flex flex-wrap justify-center items-center gap-5 my-10 overflow-hidden z-10">
+      <div className="flex flex-wrap justify-start items-center gap-5 my-10 overflow-hidden z-10">
         <Banner /> 
         {products ? (
           products.map((d, i) => {
