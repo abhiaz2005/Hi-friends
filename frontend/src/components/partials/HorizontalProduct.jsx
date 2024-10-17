@@ -20,9 +20,7 @@ const HorizontalProduct = ({ data }) => {
           p_id: data._id,
         },
       });
-      setTimeout(() => {
-        window.location.reload();
-      }, 500);
+      
       toast.success(deletedProduct.data.message);
     } else {
       setOrders(false);
@@ -32,9 +30,7 @@ const HorizontalProduct = ({ data }) => {
           user: user._id,
         },
       });
-      setTimeout(() => {
-        window.location.reload();
-      }, 500);
+      
       toast.success(deletedProduct.data.message);
     }
   };
