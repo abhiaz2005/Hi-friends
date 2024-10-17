@@ -248,7 +248,7 @@ const Navbar = () => {
 
               {login ? (
                 <Link
-                  to="/logout"
+                  onClick={handleLogout}
                   className="w-[90%] bg-red-600 cursor-pointer hover:scale-105 hover:duration-300 my-10 px-6 py-4 rounded-md mx-auto flex items-center justify-start gap-10"
                 >
                   <BiLogOut size={"2.1em"} />
