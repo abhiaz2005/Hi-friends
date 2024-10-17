@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import Footer from "./Footer";
 import { useForm } from "react-hook-form";
 import  axios from "../../utils/axios.js"
+import toast from "react-hot-toast";
 
 const Contact = () => {
     const navigate = useNavigate() ;
@@ -17,7 +18,8 @@ const Contact = () => {
 
     const handleQuery = async(data) =>{
         const response = await axios.post("/user/sendmail",data) ;
-        console.log(response.data.message) ;
+        toast.success(response.data.message) ;
+        navigate("/") ;
     }
 
   return (
