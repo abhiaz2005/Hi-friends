@@ -22,10 +22,6 @@ async function main() {
     mongoose.connect(mongoURL) ;
 }
 
-app.get("/",(req,res)=>{
-    res.send("Hello World") ;
-})
-
 
 //middlewares
 app.use(cors()) ;
