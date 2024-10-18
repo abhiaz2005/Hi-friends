@@ -212,13 +212,13 @@ const Navbar = () => {
                 <span className="text-xl font-semibold">Cart</span>
               </div>
 
-              <Link
+              <div
                 onClick={() => handleNavigation("/orders")}
                 className="w-[90%] bg-[#C7C8CC] cursor-pointer hover:scale-105 hover:duration-300 my-10 px-6 py-4 rounded-md  mx-auto flex items-center justify-start gap-10"
               >
                 <FaShoppingBag size={"2.1em"} />
                 <span className="text-xl font-semibold">Orders</span>
-              </Link>
+              </div>
 
               <Link
                 to="/contact"
